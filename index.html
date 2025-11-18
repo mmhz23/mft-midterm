@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="MFT Midterm project" />
+
+    <title>FashionHub</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__brand">
+        <img src="assets/images/logo.png" alt="FashionHub logo" class="header__logo" />
+
+        <nav class="header__nav">
+          <a href="#category" class="nav__item">Category</a>
+          <a href="#brand" class="nav__item">Brand</a>
+          <a href="#contact" class="nav__item">Contact</a>
+          <a href="#FAQ" class="nav__item">FAQ</a>
+        </nav>
+      </div>
+
+      <div class="header__controls">
+        <button type="button" aria-label="Shopping Cart" class="header__cart-btn header__btn">
+          <img src="assets/icons/bag-brown.svg" alt="" />
+          <span class="header__cart-count">1</span>
+        </button>
+
+        <button type="button" aria-label="Notification" class="header__notif-btn header__btn">
+          <img src="assets/icons/notification.svg" alt="" />
+        </button>
+
+        <div class="header__user">
+          <div class="header__user-image">
+            <img src="assets/images/user-1.png" alt="Scarlet Johnson" />
+          </div>
+          <span class="header__greeting">Good Morning!</span>
+          <span class="header__user-name">Scarlet Johnson</span>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero__gallery">
+          <div class="hero__gallery-item hero__gallery-item--banner">
+            <img src="assets/images/product-1.png" alt="Product 1" />
+          </div>
+          <div class="hero__gallery-item">
+            <img src="assets/images/product-2.png" alt="Product 2" />
+          </div>
+          <div class="hero__gallery-item">
+            <img src="assets/images/product-3.png" alt="Product 3" />
+          </div>
+          <div class="hero__gallery-item">
+            <img src="assets/images/product-4.png" alt="Product 4" />
+          </div>
+          <div class="hero__gallery-item">
+            <img src="assets/images/product-5.png" alt="Product 5" />
+          </div>
+        </div>
+
+        <div class="product">
+          <div class="breadcrumb">
+            <span class="breadcrumb__item">Home</span>
+            <img src="assets/icons/arrow-right-gray.svg" alt="/" />
+            <span class="breadcrumb__item">Fashion</span>
+            <img src="assets/icons/arrow-right-gray.svg" alt="/" />
+            <span class="breadcrumb__item">Products</span>
+            <img src="assets/icons/arrow-right-gray.svg" alt="/" />
+            <span class="breadcrumb__item">Skirts</span>
+            <img src="assets/icons/arrow-right-gray.svg" alt="/" />
+            <span class="breadcrumb__current">Coast Dress</span>
+          </div>
+
+          <div class="product__info-actions">
+            <div class="product__info">
+              <h1 class="product__title">Coast Dress</h1>
+              <span class="product__subtitle">Breezy, versatile, seaside ready style</span>
+            </div>
+
+            <div class="product__actions">
+              <button type="button" aria-label="Like product" class="product__action--like">
+                <img src="assets/icons/heart.svg" alt="" />
+                <span class="product__likes-count">109</span>
+              </button>
+
+              <button type="button" aria-label="Save product" class="product__action">
+                <img src="assets/icons/archive.svg" alt="" />
+              </button>
+
+              <button type="button" aria-label="Share product" class="product__action">
+                <img src="assets/icons/share.svg" alt="Share icon" />
+              </button>
+            </div>
+          </div>
+
+          <div class="product__price-rate">
+            <div class="product__price">
+              <h2 class="product__price-current">$710.99</h2>
+              <span class="product__price-original">$799.99</span>
+            </div>
+
+            <div class="product__rate">
+              <div class="product__rank">
+                <img src="assets/icons/star.svg" alt="Star icon" />
+                <span class="product__rank-value">4.8</span>
+              </div>
+
+              <div class="product__reviews">
+                <img src="assets/icons/message.svg" alt="Reviews icon" />
+                <span class="product__reviews-count">67 Reviews</span>
+              </div>
+
+              <p class="product__recommendation">
+                <span class="product__recommendation-percent">93%</span> of buyers have recommended
+                this.
+              </p>
+            </div>
+          </div>
+
+          <div class="product__colors">
+            <h3 class="product__colors-title">Choose a Color</h3>
+
+            <div class="product__colors-list">
+              <button
+                type="button"
+                aria-label="Color #ecdecc"
+                class="product__color product__color--ecdecc product__color--selected"
+              >
+                <span class="product__color-swatch">
+                  <img src="assets/icons/tick-circle.svg" alt="" />
+                </span>
+              </button>
+
+              <button
+                type="button"
+                aria-label="Color #bbd278"
+                class="product__color product__color--bbd278"
+              >
+                <span aria-hidden="true" class="product__color-swatch"></span>
+              </button>
+
+              <button
+                type="button"
+                aria-label="Color #bbc1f8"
+                class="product__color product__color--bbc1f8"
+              >
+                <span aria-hidden="true" class="product__color-swatch"></span>
+              </button>
+
+              <button
+                type="button"
+                aria-label="Color #ffaad9"
+                class="product__color product__color--ffaad9"
+              >
+                <span aria-hidden="true" class="product__color-swatch"></span>
+              </button>
+
+              <button
+                type="button"
+                aria-label="Color #98c185"
+                class="product__color product__color--98c185"
+              >
+                <span aria-hidden="true" class="product__color-swatch"></span>
+              </button>
+
+              <button
+                type="button"
+                aria-label="Color #ffb6b6"
+                class="product__color product__color--ffb6b6"
+              >
+                <span aria-hidden="true" class="product__color-swatch"></span>
+              </button>
+            </div>
+          </div>
+
+          <div class="product__sizes">
+            <h3 class="product__sizes-title">Choose a Size</h3>
+
+            <div class="product__size-list">
+              <button type="button" class="product__size product__size--selected">
+                <span class="product__size-radio">
+                  <span class="product__size-indicator"></span>
+                </span>
+                <span class="product__size-title">Small</span>
+              </button>
+
+              <button type="button" class="product__size">
+                <span aria-hidden="true" class="product__size-radio">
+                  <span class="product__size-indicator"></span>
+                </span>
+                <span class="product__size-title">Medium</span>
+              </button>
+
+              <button type="button" class="product__size">
+                <span aria-hidden="true" class="product__size-radio">
+                  <span class="product__size-indicator"></span>
+                </span>
+                <span class="product__size-title">Large</span>
+              </button>
+
+              <button type="button" class="product__size">
+                <span aria-hidden="true" class="product__size-radio">
+                  <span class="product__size-indicator"></span>
+                </span>
+                <span class="product__size-title">Extra Large</span>
+              </button>
+
+              <button type="button" class="product__size">
+                <span aria-hidden="true" class="product__size-radio">
+                  <span class="product__size-indicator"></span>
+                </span>
+                <span class="product__size-title">XXL</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="product__actions-panel">
+            <div class="product__quantity">
+              <button type="button" aria-label="Decrease quantity" class="product__quantity-btn">
+                <img src="assets/icons/minus.svg" alt="" />
+              </button>
+
+              <span class="product__quantity-value">5</span>
+
+              <button type="button" aria-label="Increase quantity" class="product__quantity-btn">
+                <img src="assets/icons/add.svg" alt="" />
+              </button>
+            </div>
+
+            <button type="button" class="product__add-to-cart">
+              <img src="assets/icons/bag-white.svg" alt="" />
+              <span class="product__add-to-cart-text">Add To Cart</span>
+            </button>
+          </div>
+
+          <div class="product__features">
+            <div class="product__feature">
+              <img src="assets/icons/truck.svg" alt="" />
+              <h4 class="product__feature-title">Free Delivery</h4>
+              <p class="product__feature-link">
+                Enter your Postal code for Delivery Availability.
+                <a href="#" target="_blank" rel="noopener noreferrer">Details</a>
+              </p>
+            </div>
+
+            <div class="product__feature">
+              <img src="assets/icons/bag-red.svg" alt="" />
+              <h4 class="product__feature-title">Return Delivery</h4>
+              <p class="product__feature-link">
+                Free 30 days Delivery Return.
+                <a href="#" target="_blank" rel="noopener noreferrer">Details</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
